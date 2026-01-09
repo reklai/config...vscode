@@ -121,7 +121,7 @@
     "command": "editor.action.revealDefinition"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+n",
     "command": "editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
@@ -423,7 +423,7 @@
     "command": "editor.action.startFindReplaceAction"
   },
   {
-    "key": "ctrl+]",
+    "key": "ctrl+shift+]",
     "command": "editor.action.marker.next",
     "when": "editorFocus"
   },
@@ -433,7 +433,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+[",
+    "key": "ctrl+shift+[",
     "command": "editor.action.marker.prev",
     "when": "editorFocus"
   },
@@ -487,7 +487,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+p c",
+    "key": "ctrl+z",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -497,7 +497,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+p l",
+    "key": "ctrl+x",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -599,7 +599,7 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "ctrl+shift+space",
+    "key": "ctrl+[",
     "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
@@ -1261,5 +1261,480 @@
 {
   "key": "ctrl+p",
   "command": "-workbench.action.quickOpen"
+},
+{
+  "key": "ctrl+a",
+  "command": "-notebook.cell.output.selectAll",
+  "when": "notebookEditorFocused && notebookOutputFocused"
+},
+{
+  "key": "ctrl+a",
+  "command": "-editor.action.selectAll"
+},
+{
+  "key": "ctrl+a",
+  "command": "-extension.vim_ctrl+a",
+  "when": "editorTextFocus && vim.active && vim.use<C-a> && !inDebugRepl"
+},
+{
+  "key": "ctrl+a",
+  "command": "-list.selectAll",
+  "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
+},
+{
+  "key": "ctrl+a",
+  "command": "vscode-harpoon.addEditor"
+},
+{
+  "key": "ctrl+h",
+  "command": "-extension.vim_ctrl+h",
+  "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
+},
+{
+  "key": "ctrl+o",
+  "command": "vscode-harpoon.editorGlobalQuickPick"
+},
+{
+  "key": "ctrl+e",
+  "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+  "when": "accessibilityHelpIsShown"
+},
+{
+  "key": "ctrl+e",
+  "command": "-extension.vim_ctrl+e",
+  "when": "editorTextFocus && vim.active && vim.use<C-e> && !inDebugRepl"
+},
+{
+  "key": "ctrl+e",
+  "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+  "when": "inFilesPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+1",
+  "command": "vscode-harpoon.addEditor1"
+},
+{
+  "key": "ctrl+2",
+  "command": "vscode-harpoon.addEditor2"
+},
+{
+  "key": "ctrl+3",
+  "command": "vscode-harpoon.addEditor3"
+},
+{
+  "key": "ctrl+4",
+  "command": "vscode-harpoon.addEditor4"
+},
+{
+  "key": "ctrl+5",
+  "command": "-workbench.action.focusFifthEditorGroup"
+},
+{
+  "key": "ctrl+b",
+  "command": "-extension.vim_ctrl+b",
+  "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+},
+{
+  "key": "alt+f4",
+  "command": "-workbench.action.closeWindow"
+},
+{
+  "key": "ctrl+w",
+  "command": "-workbench.action.terminal.killEditor",
+  "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated || terminalEditorFocus && terminalFocus && terminalProcessSupported"
+},
+{
+  "key": "ctrl+k",
+  "command": "workbench.action.closeActiveEditor"
+},
+{
+  "key": "ctrl+shift+t",
+  "command": "search.action.openInEditor",
+  "when": "hasSearchResult && searchViewletFocus"
+},
+{
+  "key": "alt+enter",
+  "command": "-search.action.openInEditor",
+  "when": "hasSearchResult && searchViewletFocus"
+},
+{
+  "key": "ctrl+p p",
+  "command": "search.action.clearSearchResults"
+},
+{
+  "key": "ctrl+e",
+  "command": "workbench.view.explorer",
+  "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+  "key": "ctrl+shift+e",
+  "command": "-workbench.view.explorer",
+  "when": "viewContainer.workbench.view.explorer.enabled"
+},
+{
+  "key": "ctrl+l",
+  "command": "-workbench.action.chat.newChat",
+  "when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+},
+{
+  "key": "ctrl+l",
+  "command": "-expandLineSelection",
+  "when": "textInputFocus"
+},
+{
+  "key": "ctrl+l",
+  "command": "-notebook.centerActiveCell",
+  "when": "notebookEditorFocused"
+},
+{
+  "key": "ctrl+l",
+  "command": "-extension.vim_navigateCtrlL",
+  "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
+},
+{
+  "key": "ctrl+r",
+  "command": "redo"
+},
+{
+  "key": "ctrl+y",
+  "command": "-redo"
+},
+{
+  "key": "ctrl+y",
+  "command": "editor.action.inlineSuggest.commit",
+  "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+},
+{
+  "key": "tab",
+  "command": "-editor.action.inlineSuggest.commit",
+  "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+},
+{
+  "key": "ctrl+y",
+  "command": "editor.action.inlineSuggest.commit",
+  "when": "inInlineEditsPreviewEditor"
+},
+{
+  "key": "tab",
+  "command": "-editor.action.inlineSuggest.commit",
+  "when": "inInlineEditsPreviewEditor"
+},
+{
+  "key": "ctrl+y",
+  "command": "-extension.vim_ctrl+y",
+  "when": "editorTextFocus && vim.active && vim.use<C-y> && !inDebugRepl"
+},
+{
+  "key": "ctrl+y",
+  "command": "-chatEditor.action.acceptHunk",
+  "when": "chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.cursorInChangeRange && chatEdits.hasEditorModifications && notebookCellListFocused && !chatEdits.isCurrentlyBeingModified"
+},
+{
+  "key": "ctrl+y",
+  "command": "acceptSelectedSuggestion",
+  "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "tab",
+  "command": "-acceptSelectedSuggestion",
+  "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "ctrl+y",
+  "command": "insertBestCompletion",
+  "when": "atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+},
+{
+  "key": "tab",
+  "command": "-insertBestCompletion",
+  "when": "atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+},
+{
+  "key": "ctrl+y",
+  "command": "insertSnippet",
+  "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+},
+{
+  "key": "tab",
+  "command": "-insertSnippet",
+  "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+},
+{
+  "key": "ctrl+y",
+  "command": "workbench.action.terminal.acceptSelectedSuggestion",
+  "when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+},
+{
+  "key": "tab",
+  "command": "-workbench.action.terminal.acceptSelectedSuggestion",
+  "when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+},
+{
+  "key": "ctrl+y",
+  "command": "insertNextSuggestion",
+  "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+},
+{
+  "key": "tab",
+  "command": "-insertNextSuggestion",
+  "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+},
+{
+  "key": "ctrl+shift+y",
+  "command": "-chatEditor.action.accept",
+  "when": "chatEdits.hasEditorModifications && chatEdits.isGlobalEditingSession && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && chatEdits.isGlobalEditingSession && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+},
+{
+  "key": "ctrl+alt+y",
+  "command": "-chatEditor.action.acceptAllEdits",
+  "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+},
+{
+  "key": "ctrl+shift+y",
+  "command": "-workbench.debug.action.toggleRepl",
+  "when": "workbench.panel.repl.view.active"
+},
+{
+  "key": "ctrl+y",
+  "command": "editor.action.accessibleViewAcceptInlineCompletion",
+  "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+},
+{
+  "key": "ctrl+/",
+  "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+  "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+},
+{
+  "key": "ctrl+]",
+  "command": "selectNextSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "ctrl+down",
+  "command": "-selectNextSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "down",
+  "command": "-selectNextSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "ctrl+[",
+  "command": "selectPrevSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "ctrl+up",
+  "command": "-selectPrevSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "up",
+  "command": "-selectPrevSuggestion",
+  "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "ctrl+h",
+  "command": "workbench.action.focusLeftGroup"
+},
+{
+  "key": "ctrl+l",
+  "command": "workbench.action.focusRightGroup"
+},
+{
+  "key": "ctrl+o",
+  "command": "-workbench.action.files.openFile",
+  "when": "true"
+},
+{
+  "key": "ctrl+o",
+  "command": "-workbench.action.files.openFolderViaWorkspace",
+  "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+},
+{
+  "key": "ctrl+o",
+  "command": "-workbench.action.files.openFileFolder",
+  "when": "isMacNative && openFolderWorkspaceSupport"
+},
+{
+  "key": "ctrl+o",
+  "command": "-extension.vim_ctrl+o",
+  "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
+},
+{
+  "key": "ctrl+o",
+  "command": "-workbench.action.files.openLocalFile",
+  "when": "remoteFileDialogVisible"
+},
+{
+  "key": "ctrl+o",
+  "command": "-java.action.showExtendedOutline",
+  "when": "inQuickOpen && javaLSReady"
+},
+{
+  "key": "ctrl+space",
+  "command": "-editor.action.triggerSuggest",
+  "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+},
+{
+  "key": "ctrl+space",
+  "command": "-workbench.action.terminal.sendSequence",
+  "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+},
+{
+  "key": "ctrl+space",
+  "command": "-extension.vim_ctrl+space",
+  "when": "editorTextFocus && vim.active && vim.use<C-space> && !inDebugRepl && vim.mode != 'Insert'"
+},
+{
+  "key": "ctrl+space",
+  "command": "-focusSuggestion",
+  "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+},
+{
+  "key": "ctrl+space",
+  "command": "-quickInput.toggleHover",
+  "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
+},
+{
+  "key": "ctrl+space",
+  "command": "-toggleSuggestionDetails",
+  "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "ctrl+space",
+  "command": "-workbench.action.terminal.suggestToggleDetails",
+  "when": "simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalHasBeenCreated && terminalIsOpen && terminalSuggestWidgetVisible || simpleSuggestWidgetHasFocusedSuggestion && terminalFocus && terminalIsOpen && terminalProcessSupported && terminalSuggestWidgetVisible"
+},
+{
+  "key": "ctrl+space",
+  "command": "-workbench.action.terminal.triggerSuggest",
+  "when": "config.terminal.integrated.suggest.enabled && terminalFocus && terminalProcessSupported && !terminalSuggestWidgetVisible"
+},
+{
+  "key": "ctrl+j",
+  "command": "-workbench.action.togglePanel"
+},
+{
+  "key": "ctrl+j",
+  "command": "-extension.vim_ctrl+j",
+  "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
+},
+{
+  "key": "ctrl+shift+j",
+  "command": "-workbench.action.search.toggleQueryDetails",
+  "when": "inSearchEditor || searchViewletFocus"
+},
+{
+  "key": "ctrl+]",
+  "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+  "when": "inEditorsPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+tab",
+  "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+  "when": "inEditorsPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+]",
+  "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+  "when": "inFilesPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+p",
+  "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+  "when": "inFilesPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+[",
+  "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+  "when": "inEditorsPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+shift+tab",
+  "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+  "when": "inEditorsPicker && inQuickOpen"
+},
+{
+  "key": "ctrl+x",
+  "command": "-filesExplorer.cut",
+  "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+{
+  "key": "ctrl+x",
+  "command": "-extension.vim_ctrl+x",
+  "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+},
+{
+  "key": "ctrl+shift+x",
+  "command": "editor.action.clipboardCutAction"
+},
+{
+  "key": "ctrl+x",
+  "command": "-editor.action.clipboardCutAction"
+},
+{
+  "key": "ctrl+shift+x",
+  "command": "-workbench.view.extensions",
+  "when": "viewContainer.workbench.view.extensions.enabled"
+},
+{
+  "key": "ctrl+shift+]",
+  "command": "editor.action.marker.nextInFiles",
+  "when": "editorFocus"
+},
+{
+  "key": "f8",
+  "command": "-editor.action.marker.nextInFiles",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+shift+[",
+  "command": "editor.action.marker.prevInFiles",
+  "when": "editorFocus"
+},
+{
+  "key": "shift+f8",
+  "command": "-editor.action.marker.prevInFiles",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+b",
+  "command": "workbench.action.toggleAuxiliaryBar"
+},
+{
+  "key": "ctrl+alt+b",
+  "command": "-workbench.action.toggleAuxiliaryBar"
+},
+{
+  "key": "ctrl+shift+b",
+  "command": "workbench.action.tasks.build",
+  "when": "taskCommandsRegistered"
+},
+{
+  "key": "ctrl+shift+b",
+  "command": "-workbench.action.tasks.build",
+  "when": "taskCommandsRegistered"
+},
+{
+  "key": "ctrl+shift+backspace",
+  "command": "-search.searchEditor.action.deleteFileResults",
+  "when": "inSearchEditor"
+},
+{
+  "key": "ctrl+space",
+  "command": "editor.action.triggerParameterHints",
+  "when": "editorHasSignatureHelpProvider && editorTextFocus"
+},
+{
+  "key": "ctrl+shift+space",
+  "command": "-editor.action.triggerParameterHints",
+  "when": "editorHasSignatureHelpProvider && editorTextFocus"
+},
+{
+  "key": "shift+backspace",
+  "command": "-extension.vim_shift+backspace",
+  "when": "editorTextFocus && vim.active && vim.use<S-BS> && !inDebugRepl && vim.mode != 'Insert'"
 }
 ]
