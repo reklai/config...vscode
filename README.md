@@ -13,5 +13,7 @@ Minimap: Uncheck
 
 Current Theme: C++ Dark as Main Color Theme + MacOS Modern Theme as File Theme and Productition Theme
 
-Appearance: Move Primary Side Bar to left side
+Enable both preview from workbench and preview text editor renaming
+
+Install Periscope extension is being used for fuzzy finding in three states: grep, files, current files
 
