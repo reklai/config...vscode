@@ -117,10 +117,6 @@
     "when": "editorHasImplementationProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+w",
-    "command": "editor.action.revealDefinition"
-  },
-  {
     "key": "ctrl+n",
     "command": "editor.action.goToReferences",
     "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
@@ -391,10 +387,6 @@
     "command": "-redo"
   },
   {
-    "key": "ctrl+p g",
-    "command": "workbench.action.findInFiles"
-  },
-  {
     "key": "ctrl+shift+f",
     "command": "-workbench.action.findInFiles"
   },
@@ -402,11 +394,6 @@
     "key": "shift+alt+f",
     "command": "-filesExplorer.findInFolder",
     "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
-  },
-  {
-    "key": "ctrl+p b",
-    "command": "actions.find",
-    "when": "editorFocus || editorIsOpen"
   },
   {
     "key": "ctrl+f",
@@ -1251,10 +1238,6 @@
   "when": "remoteFileDialogVisible"
 },
 {
-  "key": "ctrl+p f",
-  "command": "workbench.action.quickOpen"
-},
-{
   "key": "ctrl+e",
   "command": "-workbench.action.quickOpen"
 },
@@ -1282,17 +1265,9 @@
   "when": "listFocus && listSupportsMultiselect && !inputFocus && !treestickyScrollFocused"
 },
 {
-  "key": "ctrl+a",
-  "command": "vscode-harpoon.addEditor"
-},
-{
   "key": "ctrl+h",
   "command": "-extension.vim_ctrl+h",
   "when": "editorTextFocus && vim.active && vim.use<C-h> && !inDebugRepl"
-},
-{
-  "key": "ctrl+o",
-  "command": "vscode-harpoon.editorGlobalQuickPick"
 },
 {
   "key": "ctrl+e",
@@ -1308,22 +1283,6 @@
   "key": "ctrl+e",
   "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
   "when": "inFilesPicker && inQuickOpen"
-},
-{
-  "key": "ctrl+1",
-  "command": "vscode-harpoon.addEditor1"
-},
-{
-  "key": "ctrl+2",
-  "command": "vscode-harpoon.addEditor2"
-},
-{
-  "key": "ctrl+3",
-  "command": "vscode-harpoon.addEditor3"
-},
-{
-  "key": "ctrl+4",
-  "command": "vscode-harpoon.addEditor4"
 },
 {
   "key": "ctrl+5",
@@ -1704,11 +1663,6 @@
   "when": "inSearchEditor"
 },
 {
-  "key": "ctrl+space",
-  "command": "editor.action.triggerParameterHints",
-  "when": "editorHasSignatureHelpProvider && editorTextFocus"
-},
-{
   "key": "ctrl+shift+space",
   "command": "-editor.action.triggerParameterHints",
   "when": "editorHasSignatureHelpProvider && editorTextFocus"
@@ -1748,5 +1702,140 @@
   "key": "ctrl+pageup",
   "command": "-extension.vim_ctrl+pageup",
   "when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
+},
+{
+  "key": "alt+r",
+  "command": "-toggleSearchEditorRegex",
+  "when": "inSearchEditor && searchInputBoxFocus"
+},
+{
+  "key": "ctrl+alt+r",
+  "command": "-java.view.package.revealFileInOS",
+  "when": "focusedView == 'javaProjectExplorer' && java:serverMode == 'Standard'"
+},
+{
+  "key": "ctrl+alt+r",
+  "command": "-revealFileInOS",
+  "when": "!editorFocus"
+},
+{
+  "key": "ctrl+alt+r",
+  "command": "-workbench.action.terminal.sendSequence",
+  "when": "accessibilityModeEnabled && terminalFocus"
+},
+{
+  "key": "alt+r",
+  "command": "-workbench.action.terminal.toggleFindRegex",
+  "when": "terminalFindVisible && terminalHasBeenCreated || terminalFindVisible && terminalProcessSupported"
+},
+{
+  "key": "ctrl+shift+g",
+  "command": "workbench.action.terminal.runRecentCommand",
+  "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+},
+{
+  "key": "ctrl+alt+r",
+  "command": "-workbench.action.terminal.runRecentCommand",
+  "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+},
+{
+  "key": "alt+l",
+  "command": "-toggleSearchEditorContextLines",
+  "when": "inSearchEditor"
+},
+{
+  "key": "alt+l",
+  "command": "-toggleFindInSelection",
+  "when": "editorFocus"
+},
+{
+  "key": "ctrl+shift+alt+l",
+  "command": "-workbench.action.quickchat.toggle",
+  "when": "chatIsEnabled"
+},
+{
+  "key": "ctrl+p",
+  "command": "-extension.vim_ctrl+p",
+  "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+},
+{
+  "key": "ctrl+shift+j",
+  "command": "-find-it-faster.findFiles"
+},
+{
+  "key": "ctrl+shift+u",
+  "command": "-find-it-faster.findWithinFiles"
+},
+{
+  "key": "ctrl+shift+alt+u",
+  "command": "-find-it-faster.findWithinFilesWithType"
+},
+{
+  "key": "ctrl+a",
+  "command": "editor.action.selectAll"
+},
+{
+  "key": "ctrl+shift+l",
+  "command": "-selectAllSearchEditorMatches",
+  "when": "inSearchEditor"
+},
+{
+  "key": "alt+enter",
+  "command": "-editor.action.selectAllMatches",
+  "when": "editorFocus && findWidgetVisible"
+},
+{
+  "key": "ctrl+space",
+  "command": "vscode-harpoon.addEditor"
+},
+{
+  "key": "ctrl+1",
+  "command": "vscode-harpoon.gotoEditor1"
+},
+{
+  "key": "ctrl+2",
+  "command": "vscode-harpoon.gotoEditor2"
+},
+{
+  "key": "ctrl+3",
+  "command": "vscode-harpoon.gotoEditor3"
+},
+{
+  "key": "ctrl+4",
+  "command": "vscode-harpoon.gotoEditor4"
+},
+{
+  "key": "ctrl+5",
+  "command": "vscode-harpoon.gotoEditor5"
+},
+{
+  "key": "ctrl+6",
+  "command": "vscode-harpoon.gotoEditor6"
+},
+{
+  "key": "ctrl+o",
+  "command": "vscode-harpoon.editorQuickPick"
+},
+{
+  "key": "ctrl+w",
+  "command": "editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+},
+{
+  "key": "ctrl+shift+f10",
+  "command": "-editor.action.peekDefinition",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+},
+{
+  "key": "ctrl+p b",
+  "command": "periscope.searchCurrentFile"
+},
+{
+  "key": "ctrl+p f",
+  "command": "periscope.searchFiles"
+},
+{
+  "key": "ctrl+p g",
+  "command": "periscope.search"
 }
 ]
