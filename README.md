@@ -11,4 +11,4 @@ Window Menu Bar Visbility: Compact
 
 Minimap: Uncheck
 
-Current Theme: MacOS Modern Theme
+Current Theme: C++ Dark Theme + MacOS Modern Theme Everything Else
