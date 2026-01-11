@@ -11,7 +11,7 @@ Window Menu Bar Visbility: Compact
 
 Minimap: Uncheck
 
-Current Theme: C++ Dark as Main Color Theme + MacOS Modern Theme as File Theme and Productition Theme
+Current Theme: C++ or Hacker Theme as Main Color Theme + MacOS Modern Theme as File Theme and Productition Theme
 
 Enable both preview from workbench and preview text editor renaming
 
