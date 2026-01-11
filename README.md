@@ -20,3 +20,5 @@ Install Periscope extension is being used for fuzzy finding in three states: gre
 Workbench Tab, show tab: none 
 
 Occurrence Highlights: off
+
+Code action lightbulb: off
