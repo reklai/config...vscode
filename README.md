@@ -22,3 +22,5 @@ Workbench Tab, show tab: none
 Occurrence Highlights: off
 
 Code action lightbulb: off
+
+Terminal Keeper Extension Installed
