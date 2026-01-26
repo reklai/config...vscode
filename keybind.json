@@ -1308,11 +1308,6 @@
     "command": "workbench.action.closeActiveEditor"
   },
   {
-    "key": "alt+enter",
-    "command": "-search.action.openInEditor",
-    "when": "hasSearchResult && searchViewletFocus"
-  },
-  {
     "key": "ctrl+p p",
     "command": "search.action.clearSearchResults"
   },
@@ -1675,10 +1670,6 @@
   {
     "key": "ctrl+d",
     "command": "extension.vim_ctrl+d"
-  },
-  {
-    "key": "ctrl+shift+t",
-    "command": "search.action.openInEditor"
   },
   {
     "key": "ctrl+r",
@@ -2058,7 +2049,7 @@
     "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+l",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
@@ -2068,7 +2059,7 @@
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+h",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
@@ -2082,7 +2073,7 @@
     "command": "-workbench.action.focusEighthEditorGroup"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+l",
     "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
   },
@@ -2092,7 +2083,7 @@
     "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+h",
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus && terminalHasBeenCreated && terminalSplitPaneActive || terminalFocus && terminalProcessSupported && terminalSplitPaneActive"
   },
@@ -2114,5 +2105,33 @@
   {
     "key": "ctrl+shift+h",
     "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.killActiveTab",
+    "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "delete",
+    "command": "-workbench.action.terminal.killActiveTab",
+    "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+g",
+    "command": "-editor.action.announceCursorPosition",
+    "when": "accessibilityModeEnabled && editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.killEditor"
+  },
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
   }
 ]
