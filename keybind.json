@@ -574,7 +574,7 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+-",
     "command": "workbench.action.quickOpenNavigatePreviousInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
@@ -1438,7 +1438,7 @@
     "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+=",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
@@ -1453,7 +1453,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+-",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
@@ -1560,7 +1560,7 @@
     "when": "inSearchEditor || searchViewletFocus"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+=",
     "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   },
@@ -1570,7 +1570,7 @@
     "when": "inEditorsPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+=",
     "command": "workbench.action.quickOpenNavigateNextInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
   },
@@ -1580,7 +1580,7 @@
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+-",
     "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   },
@@ -1856,7 +1856,7 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+=",
+    "key": "ctrl+shift+=",
     "command": "workbench.action.zoomIn"
   },
   {
@@ -1864,7 +1864,7 @@
     "command": "-workbench.action.zoomIn"
   },
   {
-    "key": "ctrl+-",
+    "key": "ctrl+shift+-",
     "command": "workbench.action.zoomOut"
   },
   {
@@ -1885,7 +1885,7 @@
     "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+-",
     "command": "quickInput.previous",
     "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
   },
@@ -1895,7 +1895,7 @@
     "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
   },
   {
-    "key": "ctrl+0",
+    "key": "ctrl+=",
     "command": "quickInput.next",
     "when": "inQuickInput && quickInputType == 'quickPick' || inQuickInput && quickInputType == 'quickTree'"
   },
