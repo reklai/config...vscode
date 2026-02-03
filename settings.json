@@ -1,6 +1,5 @@
 {
   "C_Cpp.updateChannel": "Insiders",
-  "python.languageServer": "Pylance",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.project.importOnFirstTimeStartup": "automatic",
@@ -55,7 +54,14 @@
   },
   "debug.onTaskErrors": "showErrors",
   "[python]": {
-    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "strict"
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -91,8 +97,6 @@
     "editor.defaultFormatter": "golang.go",
     "go.formatTool": "goimports",
   },
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -140,4 +144,11 @@
       ]
     },
   ],
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "editor.autoIndentOnPasteWithinString": false,
+  "editor.pasteAs.enabled": false,
+  "editor.overtypeOnPaste": false,
+  "editor.pasteAs.preferences": [],
+  "python.analysis.typeCheckingMode": "basic",
 }
